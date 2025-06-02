@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzy-home2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="bar"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                <g clip-path="url(#clip0_12318_24474)">
+                    <path
+                        d="M0.25 4.16665H16.75V5.99998H0.25V4.16665ZM0.25 10.5833H11.25V12.4166H0.25V10.5833ZM0.25 17H16.75V18.8333H0.25V17Z"
+                        fill="#2B2B2D" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_12318_24474">
+                        <rect width="22.48" height="22" fill="white" transform="matrix(1 0 0 -1 0.25 22.5)" />
+                    </clipPath>
+                </defs>
+            </svg></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Category<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15"
+                    fill="none">
+                    <path
+                        d="M5.66445 8.16249L8.75195 5.07499L9.63945 5.94999L5.66445 9.92499L1.68945 5.94999L2.57695 5.07499L5.66445 8.16249Z"
+                        fill="black" />
+                </svg></a>
+            <a href="#">Products<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15"
+                    fill="none">
+                    <path
+                        d="M5.66445 8.16249L8.75195 5.07499L9.63945 5.94999L5.66445 9.92499L1.68945 5.94999L2.57695 5.07499L5.66445 8.16249Z"
+                        fill="black" />
+                </svg></a>
+            <a href="#">Pages<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15"
+                    fill="none">
+                    <path
+                        d="M5.66445 8.16249L8.75195 5.07499L9.63945 5.94999L5.66445 9.92499L1.68945 5.94999L2.57695 5.07499L5.66445 8.16249Z"
+                        fill="black" />
+                </svg></a>
+            <a href="#">Blog<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15"
+                    fill="none">
+                    <path
+                        d="M5.66445 8.16249L8.75195 5.07499L9.63945 5.94999L5.66445 9.92499L1.68945 5.94999L2.57695 5.07499L5.66445 8.16249Z"
+                        fill="black" />
+                </svg></a>
+            <a href="#">Elements<svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15"
+                    fill="none">
+                    <path
+                        d="M5.66445 8.16249L8.75195 5.07499L9.63945 5.94999L5.66445 9.92499L1.68945 5.94999L2.57695 5.07499L5.66445 8.16249Z"
+                        fill="black" />
+                </svg></a>
+        </nav>
+        <div class="contect-no"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                fill="none">
+                <g clip-path="url(#clip0_12318_24476)">
+                    <path
+                        d="M5.55 9.4C5.93889 10.0889 6.41389 10.7139 6.975 11.275C7.53611 11.8361 8.16111 12.3111 8.85 12.7L9.58333 11.6667C9.70556 11.4889 9.86944 11.3778 10.075 11.3333C10.2806 11.2889 10.4778 11.3167 10.6667 11.4167C11.8556 12.0722 13.1278 12.45 14.4833 12.55C14.6944 12.5722 14.875 12.6611 15.025 12.8167C15.175 12.9722 15.25 13.1611 15.25 13.3833V17.1C15.25 17.3111 15.1778 17.4972 15.0333 17.6583C14.8889 17.8194 14.7111 17.9111 14.5 17.9333C14.0556 17.9778 13.6111 18 13.1667 18C11.4111 18 9.73333 17.6611 8.13333 16.9833C6.58889 16.3278 5.22222 15.4056 4.03333 14.2167C2.84444 13.0278 1.92222 11.6611 1.26667 10.1167C0.588889 8.51667 0.25 6.83889 0.25 5.08333C0.25 4.63889 0.272222 4.19444 0.316667 3.75C0.338889 3.53889 0.430556 3.36111 0.591667 3.21667C0.752778 3.07222 0.938889 3 1.15 3H4.86667C5.08889 3 5.27778 3.075 5.43333 3.225C5.58889 3.375 5.67778 3.55555 5.7 3.76667C5.8 5.12222 6.17778 6.39444 6.83333 7.58333C6.93333 7.77222 6.96111 7.96944 6.91667 8.175C6.87222 8.38056 6.76111 8.54444 6.58333 8.66667L5.55 9.4ZM3.45 8.85L5.03333 7.71667C4.58889 6.75 4.28333 5.73333 4.11667 4.66667H1.91667V5.08333C1.91667 6.60555 2.21111 8.06667 2.8 9.46667C3.36667 10.8111 4.16944 12.0028 5.20833 13.0417C6.24722 14.0806 7.43889 14.8833 8.78333 15.45C10.1833 16.0389 11.6444 16.3333 13.1667 16.3333H13.5833V14.1333C12.5167 13.9667 11.5 13.6611 10.5333 13.2167L9.4 14.8C8.94444 14.6222 8.5 14.4111 8.06667 14.1667L8.01667 14.15C7.20556 13.6833 6.46667 13.1167 5.8 12.45C5.13333 11.7833 4.56667 11.0444 4.1 10.2333L4.08333 10.1833C3.83889 9.75 3.62778 9.30556 3.45 8.85Z"
+                        fill="#212529" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_12318_24476">
+                        <rect width="20.48" height="20" fill="white" transform="matrix(1 0 0 -1 0.25 20.5)" />
+                    </clipPath>
+                </defs>
+            </svg> + 123 ( 456 ) ( 7890)
+        </div>
+    </header>
+
+    <section class="header2">
+        <div class="logo">
+            <img src="Images/Page-1 1.png" alt="">
+            <div class="logo-info">
+                <h3>Foodzy</h3>
+                <h6>A Treasure of Tastes</h6>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="search-box">Search for items...</div>
+            <div class="all-cate-dropdown">All Categories <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                    viewBox="0 0 19 15" fill="none">
+                    <path
+                        d="M5.66445 8.16249L8.75195 5.07499L9.63945 5.94999L5.66445 9.92499L1.68945 5.94999L2.57695 5.07499L5.66445 8.16249Z"
+                        fill="black" />
+                </svg></div>
+            <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"
+                    fill="none">
+                    <g clip-path="url(#clip0_12329_15969)">
+                        <path
+                            d="M9.6262 9.6017L12.1229 12.0984L11.2945 12.9267L8.79786 10.43C8.33898 10.7956 7.83731 11.0756 7.29286 11.27C6.71731 11.4723 6.1262 11.5734 5.51953 11.5734C4.57064 11.5734 3.68786 11.3361 2.8712 10.8617C2.07786 10.395 1.45175 9.76503 0.992865 8.9717C0.510642 8.15503 0.269531 7.27225 0.269531 6.32336C0.269531 5.37447 0.510642 4.4917 0.992865 3.67503C1.45175 2.8817 2.07786 2.25559 2.8712 1.7967C3.68786 1.31447 4.57064 1.07336 5.51953 1.07336C6.46842 1.07336 7.3512 1.31447 8.16786 1.7967C8.9612 2.25559 9.5912 2.8817 10.0579 3.67503C10.5323 4.4917 10.7695 5.37447 10.7695 6.32336C10.7695 6.93003 10.6684 7.52114 10.4662 8.0967C10.2718 8.64114 9.99175 9.14281 9.6262 9.6017ZM8.44786 9.17003C8.81342 8.7967 9.09731 8.36892 9.29953 7.8867C9.50175 7.38892 9.60286 6.86781 9.60286 6.32336C9.60286 5.58447 9.4162 4.89614 9.04286 4.25836C8.68509 3.64392 8.19898 3.15781 7.58453 2.80003C6.94675 2.4267 6.25842 2.24003 5.51953 2.24003C4.78064 2.24003 4.09231 2.4267 3.45453 2.80003C2.84009 3.15781 2.35398 3.64392 1.9962 4.25836C1.62286 4.89614 1.4362 5.58447 1.4362 6.32336C1.4362 7.06225 1.62286 7.75059 1.9962 8.38836C2.35398 9.00281 2.84009 9.48892 3.45453 9.8467C4.09231 10.22 4.78064 10.4067 5.51953 10.4067C6.06398 10.4067 6.58509 10.3056 7.08286 10.1034C7.56509 9.90114 7.99286 9.61725 8.3662 9.2517L8.44786 9.17003Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_12329_15969">
+                            <rect width="14.48" height="14" fill="white" transform="matrix(1 0 0 -1 0.269531 14)" />
+                        </clipPath>
+                    </defs>
+                </svg></div>
+        </div>
+        <div class="right-bar">
+            <div class="account"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21"
+                    fill="none">
+                    <g clip-path="url(#clip0_12329_15983)">
+                        <path
+                            d="M14.0293 19.6875H12.2793V17.9375C12.2793 17.4592 12.1626 17.0187 11.9293 16.6163C11.696 16.2137 11.378 15.8958 10.9755 15.6625C10.573 15.4292 10.1326 15.3125 9.6543 15.3125H4.4043C3.92596 15.3125 3.48555 15.4292 3.08305 15.6625C2.68055 15.8958 2.36263 16.2137 2.1293 16.6163C1.89596 17.0187 1.7793 17.4592 1.7793 17.9375V19.6875H0.0292969V17.9375C0.0292969 17.1442 0.224714 16.4121 0.615547 15.7413C1.00638 15.0704 1.53721 14.5396 2.20805 14.1487C2.87888 13.7579 3.61096 13.5625 4.4043 13.5625H9.6543C10.4476 13.5625 11.1797 13.7579 11.8505 14.1487C12.5214 14.5396 13.0522 15.0704 13.443 15.7413C13.8339 16.4121 14.0293 17.1442 14.0293 17.9375V19.6875ZM7.0293 11.8125C6.0843 11.8125 5.20346 11.5733 4.3868 11.095C3.59346 10.6283 2.96346 9.99833 2.4968 9.205C2.01846 8.38833 1.7793 7.5075 1.7793 6.5625C1.7793 5.6175 2.01846 4.73667 2.4968 3.92C2.96346 3.12667 3.59346 2.49667 4.3868 2.03C5.20346 1.55167 6.0843 1.3125 7.0293 1.3125C7.9743 1.3125 8.85513 1.55167 9.6718 2.03C10.4651 2.49667 11.0951 3.12667 11.5618 3.92C12.0401 4.73667 12.2793 5.6175 12.2793 6.5625C12.2793 7.5075 12.0401 8.38833 11.5618 9.205C11.0951 9.99833 10.4651 10.6283 9.6718 11.095C8.85513 11.5733 7.9743 11.8125 7.0293 11.8125ZM7.0293 10.0625C7.6593 10.0625 8.24263 9.905 8.7793 9.59C9.31596 9.275 9.7418 8.84917 10.0568 8.3125C10.3718 7.77583 10.5293 7.1925 10.5293 6.5625C10.5293 5.9325 10.3718 5.34917 10.0568 4.8125C9.7418 4.27583 9.31596 3.85 8.7793 3.535C8.24263 3.22 7.6593 3.0625 7.0293 3.0625C6.3993 3.0625 5.81596 3.22 5.2793 3.535C4.74263 3.85 4.3168 4.27583 4.0018 4.8125C3.6868 5.34917 3.5293 5.9325 3.5293 6.5625C3.5293 7.1925 3.6868 7.77583 4.0018 8.3125C4.3168 8.84917 4.74263 9.275 5.2793 9.59C5.81596 9.905 6.3993 10.0625 7.0293 10.0625Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_12329_15983">
+                            <rect width="21.48" height="21" fill="white" transform="matrix(1 0 0 -1 0.0292969 21)" />
+                        </clipPath>
+                    </defs>
+                </svg> Account
+            </div>
+            <div class="wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21"
+                    fill="none">
+                    <g clip-path="url(#clip0_12329_15973)">
+                        <path
+                            d="M13.6367 2.39752C14.5117 2.39752 15.3167 2.62502 16.0517 3.08002C16.7867 3.53502 17.3642 4.15336 17.7842 4.93502C18.2276 5.75169 18.4492 6.65586 18.4492 7.64752C18.4492 9.00086 18.1342 10.3017 17.5042 11.55C16.9676 12.6117 16.2034 13.6325 15.2117 14.6125C14.4417 15.3825 13.5259 16.135 12.4642 16.87C11.8692 17.2784 11.0876 17.7684 10.1192 18.34L9.69922 18.585L9.27922 18.34C8.31089 17.7684 7.52922 17.2784 6.93422 16.87C5.87255 16.135 4.95672 15.3825 4.18672 14.6125C3.19505 13.6325 2.43089 12.6117 1.89422 11.55C1.26422 10.3017 0.949219 9.00086 0.949219 7.64752C0.949219 6.65586 1.17089 5.75169 1.61422 4.93502C2.03422 4.15336 2.61172 3.53502 3.34672 3.08002C4.08172 2.62502 4.88672 2.39752 5.76172 2.39752C6.52005 2.40919 7.27255 2.59586 8.01922 2.95752C8.64922 3.26086 9.20922 3.65752 9.69922 4.14752C10.1892 3.65752 10.7492 3.26086 11.3792 2.95752C12.1259 2.58419 12.8784 2.39752 13.6367 2.39752ZM10.5217 16.065C11.3151 15.5634 12.0209 15.0675 12.6392 14.5775C13.9692 13.5159 14.9726 12.425 15.6492 11.305C16.3492 10.1384 16.6992 8.92502 16.6992 7.66502C16.6992 6.98836 16.5651 6.38169 16.2967 5.84502C16.0284 5.30836 15.6609 4.89419 15.1942 4.60252C14.7276 4.31085 14.2084 4.15919 13.6367 4.14752C13.1701 4.14752 12.6976 4.26127 12.2192 4.48877C11.7409 4.71627 11.3151 5.01669 10.9417 5.39002L9.69922 6.63252L8.45672 5.39002C8.08339 5.01669 7.65755 4.71627 7.17922 4.48877C6.70089 4.26127 6.22839 4.14752 5.76172 4.14752C5.20172 4.14752 4.68839 4.29919 4.22172 4.60252C3.75505 4.90586 3.38464 5.32294 3.11047 5.85377C2.8363 6.38461 2.69922 6.98836 2.69922 7.66502C2.69922 8.92502 3.04922 10.1384 3.74922 11.305C4.42589 12.425 5.42922 13.5159 6.75922 14.5775C7.37755 15.0675 8.08339 15.5634 8.87672 16.065C9.12172 16.2167 9.39589 16.38 9.69922 16.555C10.0026 16.38 10.2767 16.2167 10.5217 16.065Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_12329_15973">
+                            <rect width="21.48" height="21" fill="white" transform="matrix(1 0 0 -1 0.949219 21)" />
+                        </clipPath>
+                    </defs>
+                </svg> wishlist
+            </div>
+            <div class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21"
+                    fill="none">
+                    <g clip-path="url(#clip0_12329_15978)">
+                        <path
+                            d="M2.22852 13.5625V3.0625H0.478516V1.3125H3.10352C3.34852 1.3125 3.5556 1.39708 3.72477 1.56625C3.89393 1.73542 3.97852 1.9425 3.97852 2.1875V12.6875H14.8635L16.6135 5.6875H5.72852V3.9375H17.7335C17.9785 3.9375 18.1856 4.02208 18.3548 4.19125C18.5239 4.36042 18.6085 4.5675 18.6085 4.8125C18.6085 4.8825 18.5968 4.9525 18.5735 5.0225L16.386 13.7725C16.3393 13.9708 16.2373 14.1312 16.0798 14.2537C15.9223 14.3762 15.7443 14.4375 15.546 14.4375H3.10352C2.85852 14.4375 2.65143 14.3529 2.48227 14.1838C2.3131 14.0146 2.22852 13.8075 2.22852 13.5625ZM3.97852 19.6875C3.66352 19.6875 3.37185 19.6088 3.10352 19.4513C2.83518 19.2937 2.62227 19.0808 2.46477 18.8125C2.30727 18.5442 2.22852 18.2525 2.22852 17.9375C2.22852 17.6225 2.30727 17.3308 2.46477 17.0625C2.62227 16.7942 2.83518 16.5812 3.10352 16.4237C3.37185 16.2662 3.66352 16.1875 3.97852 16.1875C4.29352 16.1875 4.58518 16.2662 4.85352 16.4237C5.12185 16.5812 5.33477 16.7942 5.49227 17.0625C5.64977 17.3308 5.72852 17.6225 5.72852 17.9375C5.72852 18.2525 5.64977 18.5442 5.49227 18.8125C5.33477 19.0808 5.12185 19.2937 4.85352 19.4513C4.58518 19.6088 4.29352 19.6875 3.97852 19.6875ZM14.4785 19.6875C14.1635 19.6875 13.8718 19.6088 13.6035 19.4513C13.3352 19.2937 13.1223 19.0808 12.9648 18.8125C12.8073 18.5442 12.7285 18.2525 12.7285 17.9375C12.7285 17.6225 12.8073 17.3308 12.9648 17.0625C13.1223 16.7942 13.3352 16.5812 13.6035 16.4237C13.8718 16.2662 14.1635 16.1875 14.4785 16.1875C14.7935 16.1875 15.0852 16.2662 15.3535 16.4237C15.6218 16.5812 15.8348 16.7942 15.9923 17.0625C16.1498 17.3308 16.2285 17.6225 16.2285 17.9375C16.2285 18.2525 16.1498 18.5442 15.9923 18.8125C15.8348 19.0808 15.6218 19.2937 15.3535 19.4513C15.0852 19.6088 14.7935 19.6875 14.4785 19.6875Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_12329_15978">
+                            <rect width="21.48" height="21" fill="white" transform="matrix(1 0 0 -1 0.478516 21)" />
+                        </clipPath>
+                    </defs>
+                </svg> Cart
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-section2">
+        <img src="Images/freepik__background__90128 1.png" alt="">
+    </section>
+
+    <section class="promo-deals-section">
+        <div class="promo-sidebar">
+            <button>Cake & Milk <span>(65 Item)</span></button>
+            <button>Fresh Meat <span>(30 Item)</span></button>
+            <button>Vegetables <span>(25 Item)</span></button>
+            <button>Apple & Mango <span>(45 Item)</span></button>
+            <button>Strawberry <span>(68 Item)</span></button>
+            <button style="color: #e74c3c;">View More</button>
+        </div>
+
+        <div class="promo-deals">
+            <div class="promo-card">
+                <img src="images/3.jpg.png" alt="Cake">
+                <div class="promo-badge">
+                    <div class="promo-discount">50</div>
+                    <div class="promo-symbol">%<br>OFF</div>
+                </div>
+                <div class="promo-card-footer">
+                    <h4>Cake</h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+
+            <div class="promo-card">
+                <img src="images/4.jpg.png" alt="Cake">
+                <div class="promo-badge">
+                    <div class="promo-discount">40</div>
+                    <div class="promo-symbol">%<br>OFF</div>
+                </div>
+                <div class="promo-card-footer">
+                    <h4>Milk</h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-products-section">
+        <h2>Popular Products</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore lacus vel facilisis.</p>
+        <div class="product-section">
+            <div class="product-filter">
+                <button style="color: #e74c3c;">All <i class="fa-solid fa-arrow-right"></i></button>
+                <button>Snack <i class="fa-solid fa-arrow-right"></i></button>
+                <button>Vegetable <i class="fa-solid fa-arrow-right"></i></button>
+                <button>Fruit <i class="fa-solid fa-arrow-right"></i></button>
+                <button>Bakery <i class="fa-solid fa-arrow-right"></i></button>
+
+                <div class="promo-banner">
+                    <img src="Images/div.banner-img (1).png" alt="Juicy Fruits">
+                    <div class="promo-banner-content">
+                        <h3>Juicy <br><span>FRUITS</span></h3>
+                        <p>100% Natural</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-lock">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <img src="images/1.jpg.png" alt="Lemon">
+                    <span class="labels">Vegetables</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg> <span class="rating">(5.0)</span>
+                    <h4>Fresh organic villa farm lemon 500gm</h4>
+                    <p>$120.25 <del>$123.45</del></p>
+                </div>
+                <div class="product-card">
+                    <div class="product-lock">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <img src="images/9.jpg.png" alt="Lemon">
+                    <span class="labels">Snacks</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16556)">
+                            <path
+                                d="M7.58672 12.7025L3.17422 15.1775L4.16172 10.215L0.449219 6.78999L5.47422 6.18999L7.58672 1.60249L9.69922 6.18999L14.7242 6.78999L11.0117 10.215L11.9992 15.1775L7.58672 12.7025ZM7.58672 11.2775L10.2367 12.765L9.64922 9.77749L11.8867 7.71499L8.86172 7.35249L7.58672 4.58999L6.31172 7.35249L3.28672 7.71499L5.52422 9.77749L4.93672 12.765L7.58672 11.2775Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16556">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.449219 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg> <span class="rating">(4.5)</span>
+                    <h4>Best snakes with hazek nut pack 200gm</h4>
+                    <p>$145 <del>$150</del></p>
+                </div>
+                <div class="product-card">
+                    <div class="product-lock">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <img src="images/2.jpg.png" alt="Lemon">
+                    <span class="labels">Fruits</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg> <span class="rating">(5.0)</span>
+                    <h4>Fresh organic apple 1kg simla marming</h4>
+                    <p>$120.25 <del>$123.25</del></p>
+                </div>
+                <div class="product-card">
+                    <div class="product-lock">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <img src="images/3.jpg (1).png" alt="Lemon">
+                    <span class="labels">Fruits</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16556)">
+                            <path
+                                d="M7.58672 12.7025L3.17422 15.1775L4.16172 10.215L0.449219 6.78999L5.47422 6.18999L7.58672 1.60249L9.69922 6.18999L14.7242 6.78999L11.0117 10.215L11.9992 15.1775L7.58672 12.7025ZM7.58672 11.2775L10.2367 12.765L9.64922 9.77749L11.8867 7.71499L8.86172 7.35249L7.58672 4.58999L6.31172 7.35249L3.28672 7.71499L5.52422 9.77749L4.93672 12.765L7.58672 11.2775Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16556">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.449219 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg> <span class="rating">(4.5)</span>
+                    <h4>Organic fresh venila farm watermelon 5kg</h4>
+                    <p>$50.30 <del>$72.60</del></p>
+                </div>
+                <div class="product-card">
+                    <div class="product-lock">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <img src="images/10.jpg.png" alt="Lemon">
+                    <span class="labels">Snacks</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg> <span class="rating">(5.0)</span>
+                    <h4>Sweet crunchy nut mix 250gm pack</h4>
+                    <p>$120.25 <del>$123.25</del></p>
+                </div>
+                <div class="product-card">
+                    <div class="product-lock">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <img src="images/17.jpg.png" alt="Lemon">
+                    <span class="labels">Bakery</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_12313_16548)">
+                            <path
+                                d="M7.65703 12.7025L3.24453 15.1775L4.23203 10.215L0.519531 6.78999L5.54453 6.18999L7.65703 1.60249L9.76953 6.18999L14.7945 6.78999L11.082 10.215L12.0695 15.1775L7.65703 12.7025Z"
+                                fill="#F5885F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12313_16548">
+                                <rect width="15.48" height="15" fill="white"
+                                    transform="matrix(1 0 0 -1 0.519531 15.89)" />
+                            </clipPath>
+                        </defs>
+                    </svg> <span class="rating">(5.0)</span>
+                    <h4>Delicious white baked fresh bread and toast</h4>
+                    <p>$20 <del>$20.10</del></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-banner-section">
+        <div class="shop-banner-container">
+            <div class="shop-banner-item">
+                <img src="Images/9 → 1.jpg.png" alt="Bakery" class="shop-banner-img">
+                <div class="shop-banner-content">
+                    <h3>Healthy <br>Bakery Products</h3>
+                    <p><strong>30%</strong> Off on first order</p>
+                    <a href="#" class="shop-banner-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="shop-banner-item">
+                <img src="Images/9 → 2.jpg.png" alt="Snacks" class="shop-banner-img">
+                <div class="shop-banner-content">
+                    <h3>Fresh <br>Snacks & Sweets</h3>
+                    <p><strong>20%</strong> Off on first order</p>
+                    <a href="#" class="shop-banner-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="shop-banner-item">
+                <img src="Images/9 → 3.jpg.png" alt="Fruits" class="shop-banner-img">
+                <div class="shop-banner-content">
+                    <h3>Fresh & Healthy <br>Organic Fruits</h3>
+                    <p><strong>35%</strong> Off on first order</p>
+                    <a href="#" class="shop-banner-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-feature-section">
+        <div class="shop-feature-container">
+            <div class="shop-feature-item">
+                <h4>Product Packing</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+            <div class="shop-feature-item">
+                <h4>24X7 Support</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+            <div class="shop-feature-item">
+                <h4>Delivery in 5 Days</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+            <div class="shop-feature-item">
+                <h4>Payment Secure</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="organic-deal-section"></section>
+
+    <section class="sec2-gallery-wrapper">
+        <div class="sec2-gallery-container">
+
+            <div class="sec2-img-box">
+                <img src="Images/Listbox → Option.png" alt="Pasta" />
+            </div>
+
+            <div class="sec2-img-box">
+                <img src="Images/Listbox → Option (1).png" alt="Pizza" />
+            </div>
+
+            <div class="sec2-img-box sec2-img-overlay-box">
+                <img src="Images/Section → products-rightview.jpg.png" alt="Veg Bowl" />
+                <div class="sec2-overlay-content">
+                    <h3>Organic & Healthy<br>Vegetables</h3>
+                    <p class="sec2-discount"><span>25%</span> OFF</p>
+                    <a href="#" class="sec2-btn">Shop Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h2>Great Words From People</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <img class="testimonial-photo" src="Images/person1.png" alt="Person 1" />
+                <p>Co Founder</p>
+                <h4>Stephen Smith</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur."</p>
+            </div>
+            <div class="testimonial-card">
+                <img class="testimonial-photo" src="Images/person2.png" alt="Person 2" />
+                <p>Manager</p>
+                <h4>Lauren Robinson</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur."</p>
+            </div>
+            <div class="testimonial-card">
+                <img class="testimonial-photo" src="Images/person3.png" alt="Person 3" />
+                <p>Team Leader</p>
+                <h4>Saddika Alard</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec4-latest-news">
+        <div class="sec4-container">
+            <h2 class="sec4-title">Latest News</h2>
+            <p class="sec4-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                lacus vel facilisis.
+            </p>
+
+            <div class="sec4-news-cards">
+                <div class="sec4-news-card">
+                    <div class="sec4-news-content">
+                        <span class="sec4-meta">By Admin | Snacks</span>
+                        <h3>Urna pretium elit mauris cursus at elit Vestibulum.</h3>
+                        <a href="#" class="sec4-readmore">Read More</a>
+                    </div>
+                    <div class="sec4-news-image">
+                        <img src="Images/news1.png" alt="News 1" />
+                        <div class="sec4-date-box">
+                            <span class="sec4-date">10</span>
+                            <span class="sec4-month">oct</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec4-news-card">
+                    <div class="sec4-news-content">
+                        <span class="sec4-meta">By Admin | Food</span>
+                        <h3>Best guide to Shopping for organic ingredients.</h3>
+                        <a href="#" class="sec4-readmore">Read More</a>
+                    </div>
+                    <div class="sec4-news-image">
+                        <img src="Images/news2.png" alt="News 2" />
+                        <div class="sec4-date-box">
+                            <span class="sec4-date">09</span>
+                            <span class="sec4-month">sep</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec4-news-card">
+                    <div class="sec4-news-content">
+                        <span class="sec4-meta">By Admin | Snacks</span>
+                        <h3>Cursus at elit vestibulum urna pretium elit mauris.</h3>
+                        <a href="#" class="sec4-readmore">Read More</a>
+                    </div>
+                    <div class="sec4-news-image">
+                        <img src="Images/news3.png" alt="News 3" />
+                        <div class="sec4-date-box">
+                            <span class="sec4-date">12</span>
+                            <span class="sec4-month">oct</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foo-container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 f2">
+                    <div class="logo d-flex align-items-center mb-3">
+                        <img src="Images/Page-1 1.png" alt="">
+                        <div class="logo-info">
+                            <h3>Foodzy</h3>
+                            <h6>A Treasure of Tastes</h6>
+                        </div>
+                    </div>
+                    <p class="p1">FoodTrove is the biggest market of grocery product. Get your daily needs from our
+                        store.</p>
+                    <p class="address"><img src="Images/text.svg" alt="">51 Green St.Huntington ohaio beach ontario, NY
+                        11746 KY 4783, USA.</p>
+                    <p class="emall"><img src="Images/text (1).svg" alt=""><a href="#">example@email.com</a></p>
+                    <p class="moblie-no"><img src="Images/Item.svg" alt="">+91 123 4567890</a></p>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2 mb-4 ps-4 f22">
+                    <h6 class="fw-bold">Comapny</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="About-us.html">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2 mb-4 f22">
+                    <h6 class="fw-bold">Category</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Dairy & Bakery</a></li>
+                        <li><a href="#">Fruits & Vegetable</a></li>
+                        <li><a href="#">Snack & Spice</a></li>
+                        <li><a href="#">Juice & Drinks</a></li>
+                        <li><a href="#">Chicken & Meat</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                    </ul>
+                </div>
+
+                <div class=" col-12 col-md-12 col-lg-5">
+                    <h6 class="fw-bold">Subscribe Our Newsletter</h6>
+                    <div class="input-group mb-3 mt-3">
+                        <input type="text" class="form-control" placeholder="Sign Up Newsletter">
+                        <button class="btn btn-dark" type="button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class=" f4 d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-x-twitter fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                    <div class=" f4 d-flex flex-wrap gap-3">
+                        <img src="Images/18 →  → 1.jpg.png" alt="" class="foo-img">
+                        <img src="Images/18 →  → 2.jpg.png" alt="" class="foo-img">
+                        <img src="Images/18 →  → 3.jpg.png" alt="" class="foo-img">
+                        <img src="Images/18 →  → 4.jpg.png" alt="" class="foo-img">
+                        <img src="Images/18 →  → 5.jpg.png" alt="" class="foo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer2">
+        <p>© 2025 <span>Foodzy</span>, All rights reserved.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
